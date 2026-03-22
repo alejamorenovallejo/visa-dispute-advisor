@@ -42,7 +42,7 @@ No LLM runs server-side. The server is a pure retrieval layer.
 
 * [uv](https://docs.astral.sh/uv/) ≥ 0.5
 * Python ≥ 3.11
-* `data/visa_rules.pdf` — your copy of the VISA Dispute Management Guidelines PDF
+* `data/merchants-dispute-management-guidelines.pdf` — your copy of the VISA Dispute Management Guidelines PDF
 
 ---
 
@@ -50,7 +50,7 @@ No LLM runs server-side. The server is a pure retrieval layer.
 
 ```bash
 # 1. Clone
-git clone https://github.com/your-username/visa-dispute-advisor.git
+git clone https://github.com/alejamorenovallejo/visa-dispute-advisor.git
 cd visa-dispute-advisor
 
 # 2. Install dependencies
@@ -59,8 +59,9 @@ uv sync
 # 3. Configure paths (defaults work out-of-the-box)
 cp .env.example .env
 
-# 4. Place VISA PDF
-cp /path/to/merchants-dispute-management-guidelines.pdf data/visa_rules.pdf
+# 4. Place VISA PDF in the data/ folder
+# Download from: https://myanmar.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf
+# Save it as: data/merchants-dispute-management-guidelines.pdf
 
 # 5. Ingest VISA rules into vector store
 uv run python -m visa_dispute_advisor.ingest
