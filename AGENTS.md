@@ -28,7 +28,7 @@ scripts/
   seed_merchants.py  ← Seeds demo merchant dispute data into SQLite
 
 data/
-  visa_rules.pdf     ← VISA Dispute Management Guidelines (not committed — add locally)
+  merchants-dispute-management-guidelines.pdf     ← VISA Dispute Management Guidelines (not committed — add locally)
   dispute_cases.csv  ← Merchant dispute history seed data
   chroma/            ← Persisted ChromaDB vector store (generated)
   warehouse.db       ← SQLite database (generated)
@@ -103,7 +103,8 @@ uv run pytest
 
 ```bash
 # 1. Place VISA PDF in data/
-cp /path/to/merchants-dispute-management-guidelines.pdf data/visa_rules.pdf
+# Download from: https://myanmar.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf
+# Save as: data/merchants-dispute-management-guidelines.pdf
 
 # 2. Run ingestion (PDF → ChromaDB + SQLite)
 uv run python -m visa_dispute_advisor.ingest
@@ -183,7 +184,7 @@ vector space.
       "env": {
         "WAREHOUSE_DB_PATH": "data/warehouse.db",
         "CHROMA_PATH": "data/chroma",
-        "VISA_PDF_PATH": "data/visa_rules.pdf"
+        "VISA_PDF_PATH": "data/merchants-dispute-management-guidelines.pdf"
       }
     }
   }
