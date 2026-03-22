@@ -1,0 +1,24 @@
+merchant_id,case_id,merchant_name,dispute_date,amount,dispute_type,resolution,notes
+MER-001,CASE-001,Tech Store Guatemala,2025-06-10,320.00,Merchandise Not Received,merchant_won,Merchant provided carrier tracking proof showing delivery to billing address
+MER-001,CASE-002,Tech Store Guatemala,2025-08-22,150.00,Not as Described,merchant_lost,Customer returned defective item; merchant failed to respond within time limit
+MER-001,CASE-003,Tech Store Guatemala,2025-10-05,89.99,Duplicate Processing,merchant_won,Terminal error confirmed; duplicate charge reversed proactively by merchant
+MER-001,CASE-004,Tech Store Guatemala,2025-11-18,210.00,Cancelled Recurring Transaction,settled,Partial refund issued; subscription cancellation email found in merchant inbox
+MER-001,CASE-005,Tech Store Guatemala,2025-12-30,450.00,Card-Absent Fraud,merchant_lost,No 3DS authentication used; merchant bore liability under VISA rules
+MER-001,CASE-006,Tech Store Guatemala,2026-01-14,75.50,Merchandise Not Received,merchant_won,Signed proof of delivery submitted within response window
+MER-001,CASE-007,Tech Store Guatemala,2026-03-15,450.00,Merchandise Not Received,pending,Carrier tracking shows delivered; no signature collected
+MER-002,CASE-001,Ropa Online SA,2025-05-03,35.00,Cancelled Recurring Transaction,merchant_lost,Customer provided email cancellation confirmation; merchant had no counter-evidence
+MER-002,CASE-002,Ropa Online SA,2025-07-19,35.00,Cancelled Recurring Transaction,merchant_lost,Second recurring charge after cancellation; pattern identified
+MER-002,CASE-003,Ropa Online SA,2025-09-11,70.00,Cancelled Recurring Transaction,settled,Merchant issued refund for two months after dispute escalation
+MER-002,CASE-004,Ropa Online SA,2025-12-01,35.00,Duplicate Processing,merchant_won,Bank confirmed single authorization; duplicate was a display error on cardholder statement
+MER-002,CASE-008,Ropa Online SA,2026-02-28,35.00,Cancelled Recurring Transaction,pending,Customer claims cancellation on 2026-01-15 via email; no refund issued
+MER-003,CASE-001,Electrodomésticos XYZ,2025-04-20,650.00,Not as Described,merchant_lost,Refrigerator arrived with damage; merchant refused exchange; no inspection photos provided
+MER-003,CASE-002,Electrodomésticos XYZ,2025-06-15,340.00,Merchandise Not Received,merchant_won,Freight carrier confirmed delivery with recipient signature
+MER-003,CASE-003,Electrodomésticos XYZ,2025-09-02,1100.00,Not as Described,settled,Partial credit issued after independent inspection confirmed cosmetic damage
+MER-003,CASE-004,Electrodomésticos XYZ,2025-11-25,420.00,Not as Described,merchant_lost,Product description mismatch confirmed; merchant did not respond to chargeback
+MER-003,CASE-009,Electrodomésticos XYZ,2026-01-20,899.00,Not as Described,pending,Refrigerator arrived with broken door hinge; merchant claims perfect condition at shipment
+MER-004,CASE-001,Digital Downloads Co.,2025-03-08,49.99,Card-Absent Fraud,merchant_lost,No 3DS; IP geolocation mismatch; chargeback upheld
+MER-004,CASE-002,Digital Downloads Co.,2025-05-14,99.00,Card-Absent Fraud,merchant_lost,Unauthorized digital purchase; no authentication evidence
+MER-004,CASE-003,Digital Downloads Co.,2025-07-22,199.00,Card-Absent Fraud,merchant_lost,Stolen credentials; download IP matched cardholder city but no 3DS used
+MER-004,CASE-004,Digital Downloads Co.,2025-10-10,149.00,Card-Absent Fraud,settled,Partial refund after review; some device fingerprint overlap with cardholder
+MER-004,CASE-005,Digital Downloads Co.,2025-12-05,299.00,Card-Absent Fraud,merchant_lost,Pattern of fraud losses flagged; merchant advised to implement 3DS
+MER-004,CASE-011,Digital Downloads Co.,2026-03-10,199.00,Card-Absent Fraud,pending,Cardholder denies authorization; no 3DS; download IP in same city as cardholder

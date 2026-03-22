@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "visa-dispute-server": {
+      "command": "uv",
+      "args": ["run", "visa-advisor"],
+      "cwd": "/absolute/path/to/visa-dispute-advisor",
+      "env": {
+        "WAREHOUSE_DB_PATH": "data/warehouse.db",
+        "CHROMA_PATH": "data/chroma",
+        "VISA_PDF_PATH": "data/visa_rules.pdf"
+      }
+    }
+  }
+}

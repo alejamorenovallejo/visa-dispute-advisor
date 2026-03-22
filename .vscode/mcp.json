@@ -1,0 +1,10 @@
+{
+  "servers": {
+    "visa-dispute-advisor": {
+      "type": "stdio",
+      "command": "uv",
+      "args": ["run", "visa-advisor"],
+      "cwd": "${workspaceFolder}"
+    }
+  }
+}
